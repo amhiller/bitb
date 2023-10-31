@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The browser window */
+.container {
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: white;
+}
+
+/* Container for columns and the top "toolbar" */
+.row {
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three dots */
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Style the input field */
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+
+/* Three bars (hamburger menu) */
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: #aaa;
+  margin: 3px 0;
+  display: block;
+}
+
+/* Page content */
+.content {
+  padding: 10px;
+}
+
+.header {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  height: 10%;
+  padding: 20px;
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.line-2 {
+  width: 60%;
+  height: 100%;
+  margin-left: 20%;
+  margin-right: 0%;
+}
+
+.sign-in-container {
+  margin: auto;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in-content {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #737373;
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+}
+
+.email-top {
+  color: black;
+  margin-left: 20%;
+  padding-top: 20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.email-bottom {
+  color: #737373;
+  margin-left: 20%;
+  padding-top: 4px;
+  font-size: large;
+  font-weight: 400;
+}
+
+.email-input {
+  width: 60%;
+  margin-left: 20%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  height: 45px;
+}
+
+.checkbox {
+  padding-top: 20px;
+  padding-left: 18%;
+
+
+}
+
+.button-top {
+  width: 100%;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  background-color: #2a36d4;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: large;
+  width: 60%;
+  height: 45px;
+  
+}
+
+.filler {
+  height: 60px;
+  width: 50%
+}
+
+.header-2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #737373;
+  font-size: small;
+  font-weight: 400;
+  text-align: center;
+}
+
+.break {
+  background-color: #D3D3D3;
+  height: 20px;
+}
+
+label {
+  display: block;
+  padding-left: 15px;
+  color: #737373;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ED594A;"></span>
+      <span class="dot" style="background:#FDD800;"></span>
+      <span class="dot" style="background:#5AC05A;"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="https://kayak.okta.com">
+    </div>
+    <div class="column right">
+      <div style="float:right">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="header">
+    <img src="./kayak-logo.png">
+  </div>
+  <div class="line">
+    <hr>
+  </div>
+    <div class="sign-in-container">
+      <div class="sign-in-content">
+        <p>Sign in</p>
+      </div>
+    </div>
+  <div class="line-2">
+    <hr>
+  </div>
+  <div class="email-top">
+    Email
+  </div>
+  <div class="email-bottom">
+    Enter your email address
+  </div>
+  <div class="email-input">
+    <input type="text" id="email" name="email">
+  </div>
+  <div class="email-top">
+    Password
+  </div>
+  <div class="email-bottom">
+    Enter your password
+  </div>
+  <div class="email-input">
+    <input type="text" id="password" name="password">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox">Keep me signed in</label>
+  </div>
+  <div class="button-top">
+    <button class="button">Next</button>
+  </div>
+  <div class="filler"></div>
+
+
+
+</div>
+
+</body>
+</html> 
